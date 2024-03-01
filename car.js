@@ -30,6 +30,14 @@ class Car{
             this.speed=-this.maxSpeed/2
         }
 
+        if(this.controls.left){
+          this.x-=this.acceleration
+        }
+
+        if(this.controls.right){
+            this.x+=this.acceleration
+        }
+
 
 
         this.y-=this.speed 
